@@ -1,4 +1,4 @@
-import { AgmCoreModule } from '@agm/core';
+import { AgmCoreModule } from '@agm/core/packages/core';
 import { NgModule } from '@angular/core';
 import { AgmMarkerCluster } from './directives/marker-cluster';
 
@@ -6,6 +6,7 @@ import { AgmMarkerCluster } from './directives/marker-cluster';
   imports: [AgmCoreModule],
   declarations: [AgmMarkerCluster],
   exports: [AgmMarkerCluster],
+
 })
 export class AgmJsMarkerClustererModule {
 }

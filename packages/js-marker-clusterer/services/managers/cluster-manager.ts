@@ -3,8 +3,8 @@ import { Observable, Observer } from 'rxjs';
 
 import 'js-marker-clusterer';
 
-import { AgmMarker, GoogleMapsAPIWrapper, MarkerManager } from '@agm/core';
-import { Marker } from '@agm/core/services/google-maps-types';
+import { AgmMarker, GoogleMapsAPIWrapper, MarkerManager } from '@agm/core/packages/core';
+import { Marker } from '@agm/core/packages/core/services/google-maps-types';
 import { AgmMarkerCluster } from '../../directives/marker-cluster';
 import { ClusterOptions, MarkerClustererInstance } from '../google-clusterer-types';
 
@@ -28,7 +28,7 @@ export class ClusterManager extends MarkerManager {
       this._resolver(clusterer);
     });
   }
-
+f
   getClustererInstance(): Promise<MarkerClustererInstance> {
     return this._clustererInstance;
   }
